@@ -11,8 +11,9 @@ void setup() {
   
   // Add new Stages
   stages.add(new ButtonExampleStage());
-  stages.add(new ExampleStage());
-  
+  stages.add(new TimerExampleStage());
+  stages.add(new BasicExampleStage());
+
   // Start first stage
   stage = stages.get(0);
   stage.init();

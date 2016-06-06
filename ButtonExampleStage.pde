@@ -5,7 +5,9 @@ public class ButtonExampleStage extends Stage {
 
   @Override 
   public void init() {
-    super.init();
+    // set background color
+    backgroundColor = 200;
+    clearWindow();
 
     // do sth when setup()
 
@@ -14,7 +16,7 @@ public class ButtonExampleStage extends Stage {
     button = new Button(width/2, height/2, 400, 160, "Button");
     
     // change default attributes
-    // textSize, textColor, textHighLightedColor, baseColor, highLightedColor, strokeColor
+    // textSize(sizeY/2), textColor(255), textHighLightedColor(200), baseColor(150), highLightedColor(51), strokeColor(255)
     button.textColor = color(200);
     button.textHighLightedColor = color(180);
   }
@@ -26,12 +28,14 @@ public class ButtonExampleStage extends Stage {
 
 
     // draw button on screen
-    button.onDraw();  
-    
+    button.onDraw();    
   }
   
   @Override
   public void onMousePressed() {
+    // do sth when mousePressed()
+
+
     if(button.isMouseOn()) {
       // do sth when button pressed
       
